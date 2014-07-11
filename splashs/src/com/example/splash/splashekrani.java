@@ -3,6 +3,15 @@ package com.example.splash;
 import android.app.Activity;
 import android.os.Bundle;
 
+import android.app.Activity ;
+import android.content.Intent ;
+import android.net.Uri ;
+import android.os.Bundle ;
+import android.widget.Button ;
+import android.view.View ;
+import android.view.View.OnClickListener ;
+import android.widget.TextView;
+
 public class splashekrani extends Activity {
     /**
      * Called when the activity is first created.
@@ -10,6 +19,11 @@ public class splashekrani extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splashekranigorunum);
+        setContentView(R.layout.main);
+    }
+    public void tikla(View view) {
+
+        final TextView sonuc = (TextView) findViewById(R.id.bas);
+        sonuc.setText(getString(R.string.dugme));
     }
 }

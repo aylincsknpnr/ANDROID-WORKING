@@ -11,12 +11,12 @@ public class MyActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.anaekrangorunum);
+        setContentView(R.layout.splashekranigorunum);
         Thread t1=new Thread(){
             public void run(){
                 try{
                     sleep(3000);
-                    Intent i =new Intent("android.intent.action.SPLASH");
+                    Intent i =new Intent(getBaseContext(),splashekrani.class);
                     startActivity(i);
                 }
                 catch(InterruptedException e1){

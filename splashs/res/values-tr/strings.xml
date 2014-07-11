@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">splash</string>
     <string name="welcome">hoşgeldiniz!</string>
+    <string name="dugme">button çalışıyor</string>
+    <string name="merhaba">merhabadünya</string>
 </resources>
