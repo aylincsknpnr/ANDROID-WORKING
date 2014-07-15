@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MyActivity extends ListActivity {
 
-    String sehirler[] = {"page1","page2","page3"};
+    String sehirler[] = {"BUTTON ÖRNEK","MUSİC","OTHER"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,8 @@ public class MyActivity extends ListActivity {
             startActivity(i);
         }
         if(position==1){
-            Toast.makeText(getApplicationContext(), "tamam", Toast.LENGTH_SHORT).show();
+            Intent m =new Intent(getBaseContext(),music.class);
+            startActivity(m);
         }
         if(position==2){
             Toast.makeText(getApplicationContext(), "tamam", Toast.LENGTH_SHORT).show();

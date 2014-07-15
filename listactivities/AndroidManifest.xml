@@ -3,7 +3,8 @@
           package="com.example.listactivities"
           android:versionCode="1"
           android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="10"/>
+    <uses-sdk android:minSdkVersion="10"
+     android:targetSdkVersion="19"/>
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <activity android:name="MyActivity"
                   android:label="@string/app_name"  android:screenOrientation="nosensor">
@@ -13,21 +14,22 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity android:name="com.example.listactivities.Splash"
                   android:label="@string/app_name"  android:screenOrientation="nosensor">
 
-        <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+
         </activity>
         <activity android:name="com.example.listactivities.button"
                   android:label="@string/app_name"  android:screenOrientation="nosensor">
 
-        <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+
         </activity>
+        <activity android:name="com.example.listactivities.music"
+                  android:label="@string/app_name"  android:screenOrientation="nosensor">
+
+
+        </activity>
+
     </application>
 </manifest>
