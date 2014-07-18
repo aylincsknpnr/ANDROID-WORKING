@@ -14,13 +14,13 @@ import android.widget.Toast;
 
 public class MyActivity extends ListActivity {
 
-    String sehirler[] = {"BUTTON ÖRNEK","MUSİC","OTHER"};
+    String menus[] = {"BUTTON ÖRNEK","MUSİC","camera"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        setListAdapter(new ArrayAdapter<String>(MyActivity.this, android.R.layout.simple_list_item_1, sehirler));
+        setListAdapter(new ArrayAdapter<String>(MyActivity.this, android.R.layout.simple_list_item_1, menus));
     }
 
     @Override
@@ -37,7 +37,8 @@ public class MyActivity extends ListActivity {
             startActivity(m);
         }
         if(position==2){
-            Toast.makeText(getApplicationContext(), "tamam", Toast.LENGTH_SHORT).show();
+            Intent n =new Intent(getBaseContext(),camera.class);
+            startActivity(n);
         }
 
 
